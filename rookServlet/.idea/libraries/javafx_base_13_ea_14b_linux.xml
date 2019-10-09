@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javafx-base-13-ea+14b-linux">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../javafx-base-13-ea+14b-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
