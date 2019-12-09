@@ -1,0 +1,19 @@
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class SimpleClient {
+    public SimpleClient() throws Exception{
+        Socket socket = new Socket("localhost",8080);
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+        System.out.println("Write something to server");
+        Scanner scanner = new Scanner(System.in);
+        bufferedWriter.write(scanner.nextLine());
+        bufferedWriter.flush();
+    }
+
+    public static void main(String[] args) throws Exception {
+        new SimpleClient();
+    }
+}
